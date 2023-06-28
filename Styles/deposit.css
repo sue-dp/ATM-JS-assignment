@@ -1,0 +1,91 @@
+body {
+  font-family: Kanit;
+  margin: 5px;
+  width: 99.25vw;
+  height: 98.5vh;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Kanit;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(70, 172, 158);
+  border-radius: 15px;
+}
+body .container .header {
+  font-weight: 700;
+  font-size: 60px;
+  color: white;
+  margin: 5% 0 5% 0;
+}
+body .container .responses {
+  font-weight: 500;
+  font-size: 26px;
+  color: white;
+}
+body .container .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 20% 2% 20%;
+  padding: 2% 14% 2% 14%;
+  align-items: center;
+  border: 3px solid lightgray;
+  border-radius: 15px;
+}
+body .container .menu p {
+  font-weight: 300;
+  font-size: 36px;
+  color: white;
+}
+body .container .menu #enterAmt {
+  font-weight: 300;
+  font-size: 24px;
+  color: white;
+}
+body .container .menu input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  width: 97.5%;
+  height: 45px;
+  font-weight: 200;
+  font-size: 26px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: lightsalmon;
+}
+body .container .menu input::-moz-placeholder {
+  color: white;
+  padding-left: 4%;
+}
+body .container .menu input::placeholder {
+  color: white;
+  padding-left: 4%;
+}
+body .container .menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 45px;
+  text-decoration: none;
+}
+body .container .menu button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 45px;
+  font-weight: 200;
+  font-size: 26px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: lightsalmon;
+}/*# sourceMappingURL=deposit.css.map */

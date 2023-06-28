@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles/styles.css" />
+    <script src="./Styles/styles.js"></script>
+    <title>B.O.S.S> ATM</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Welcome to the B.O.S.S. ATM!</div>
+      <div class="responses">Success/Failure responses go here</div>
+      <div class="menu">
+        <p>Menu</p>
+        <button id="balance" onclick="currentBalance()">Account Balance</button>
+        <a href="./Pages/deposit.html">
+          <button id="deposit">Deposit</button>
+        </a>
+        <a href="./Pages/withdrawal.html">
+          <button id="withdrawal" accountWithdrawal()>Withdrawal</button>
+        </a>
+        <button id="exit">Exit</button>
+      </div>
+      <div class="keypad"></div>
+    </div>
+    <script>
+      function currentBalance() {
+        let myATM = new ATM();
+        myATM.currentBalance();
+      }
+    </script>
+  </body>
+</html>
