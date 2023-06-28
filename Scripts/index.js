@@ -1,28 +1,26 @@
-let currentBalance = 100;
 class ATM {
   constructor(currentBalance) {
     this.currentBalance = currentBalance;
   }
 
   accountDeposit() {
-    console.log(this.currentBalance);
-    const deposit = parseFloat(
-      document.getElementById("deposit-textbox").value
-    );
-    console.log(deposit);
+    // console.log(this.currentBalance);
+    const deposit = parseFloat(document.getElementById("amount-textbox").value);
+    // console.log(deposit);
 
     if (isNaN(deposit) || deposit <= 0) {
       return this.currentBalance;
     }
 
-    this.currentBalance = deposit + this.currentBalance;
-    console.log(this.currentBalance);
+    this.currentBalance += deposit;
+    // console.log(this.currentBalance);
+    getBalance();
     return this.currentBalance;
   }
 
   accountWithdrawal() {
     let withdrawal = parseFloat(
-      doument.getElementById("withdraw-textbox").value
+      document.getElementById("amount-textbox").value
     );
     // if (withdrawal < 0) {
     //   // console.log("Please enter an amount greater than $0.\n");
@@ -46,10 +44,22 @@ class ATM {
     // "You have withdrawn $" + withdrawal + ". Please take your cash."
     // );
     this.currentBalance -= withdrawal;
+    getBalance();
     return this.currentBalance;
   }
 }
 
+const getBalance = () => {
+  const responses = document.getElementById("responses");
+  responses.innerText = `Your balance is: $${atm.currentBalance}`;
+};
+
+const goodbye = () => {
+  const responses = document.getElementById("responses");
+  responses.innerText = "Thank You - Goodbye!";
+};
+
+const atm = new ATM(100);
 // console.log("Welcome to B.O.S.S. ATM!");
 // const account = new ATM(currentBalance);
 

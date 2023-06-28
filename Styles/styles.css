@@ -12,7 +12,7 @@ body .container {
   font-family: Kanit;
   width: 100%;
   height: 100%;
-  background-color: darkviolet;
+  background-color: rgb(70, 172, 158);
   border-radius: 15px;
 }
 body .container .header {
@@ -41,27 +41,52 @@ body .container .menu p {
   font-size: 36px;
   color: white;
 }
-body .container .menu a {
+body .container .menu #enterAmt {
   display: flex;
   justify-content: center;
-  margin-bottom: 5%;
-  width: 100%;
+  align-items: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+}
+body .container .menu input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4%;
+  width: 50%;
   height: 45px;
-  text-decoration: none;
+  font-weight: 200;
+  font-size: 26px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: lightsalmon;
+}
+body .container .menu input::-moz-placeholder {
+  color: white;
+}
+body .container .menu input::placeholder {
+  color: white;
+}
+body .container .menu .buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 body .container .menu button {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 5%;
   width: 100%;
   height: 45px;
   font-weight: 200;
   font-size: 26px;
-  color: black;
-  border: 2px solid black;
+  color: white;
+  border: 2px solid white;
   border-radius: 15px;
-  background-color: rgb(247, 205, 211);
-}
-body button {
-  font-family: Kanit;
+  background-color: lightsalmon;
 }/*# sourceMappingURL=styles.css.map */

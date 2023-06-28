@@ -10,31 +10,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./Styles/styles.css" />
-    <script src="./Styles/styles.js"></script>
-    <title>B.O.S.S> ATM</title>
+    <script src="./Scripts/index.js"></script>
+    <title>B.O.S.S. ATM</title>
   </head>
   <body>
     <div class="container">
       <div class="header">Welcome to the B.O.S.S. ATM!</div>
-      <div class="responses">Success/Failure responses go here</div>
+      <div id="responses" class="responses"></div>
       <div class="menu">
         <p>Menu</p>
-        <button id="balance" onclick="currentBalance()">Account Balance</button>
-        <a href="./Pages/deposit.html">
-          <button id="deposit">Deposit</button>
-        </a>
-        <a href="./Pages/withdrawal.html">
-          <button id="withdrawal" accountWithdrawal()>Withdrawal</button>
-        </a>
-        <button id="exit">Exit</button>
+        <p id="enterAmt">
+          Please enter amount:
+          <input type="text" id="amount-textbox" placeholder="$" />
+        </p>
+        <div class="buttons-wrapper">
+          <button id="deposit" onclick="atm.accountDeposit()">Deposit</button>
+
+          <button id="withdrawal" onclick="atm.accountWithdrawal()">
+            Withdrawal
+          </button>
+        </div>
+        <button id="exit" onclick="atm.goodbye()">Exit</button>
       </div>
-      <div class="keypad"></div>
+      <!-- <div class="keypad"></div> -->
     </div>
-    <script>
-      function currentBalance() {
-        let myATM = new ATM();
-        myATM.currentBalance();
-      }
-    </script>
   </body>
+  <script>
+    goodbye();
+  </script>
+  <script>
+    getBalance();
+  </script>
 </html>
