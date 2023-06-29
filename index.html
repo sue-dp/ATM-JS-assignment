@@ -14,10 +14,10 @@
     <title>B.O.S.S. ATM</title>
   </head>
   <body>
-    <div class="container">
+    <div id="container" class="container">
       <div class="header">Welcome to the B.O.S.S. ATM!</div>
       <div id="responses" class="responses"></div>
-      <div class="menu">
+      <div id="menu" class="menu">
         <p>Menu</p>
         <p id="enterAmt">
           Please enter amount:
@@ -30,14 +30,11 @@
             Withdrawal
           </button>
         </div>
-        <button id="exit" onclick="atm.goodbye()">Exit</button>
+        <button id="exit" onclick="goodbye()">Exit</button>
       </div>
       <!-- <div class="keypad"></div> -->
     </div>
   </body>
-  <script>
-    goodbye();
-  </script>
   <script>
     getBalance();
   </script>

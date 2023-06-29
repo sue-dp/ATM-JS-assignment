@@ -15,6 +15,21 @@ body .container {
   background-color: rgb(70, 172, 158);
   border-radius: 15px;
 }
+body .container .return-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  width: 25%;
+  height: 45px;
+  font-weight: 200;
+  font-size: 26px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: lightsalmon;
+}
 body .container .header {
   font-weight: 700;
   font-size: 60px;
@@ -45,6 +60,7 @@ body .container .menu #enterAmt {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 5px;
   font-weight: 400;
   font-size: 22px;
   color: white;
@@ -53,6 +69,7 @@ body .container .menu input {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 7px;
   padding-left: 4%;
   width: 50%;
   height: 45px;
